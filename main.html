@@ -1,0 +1,222 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Online Courses</title>
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/header.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/mainPage.css">
+    <link rel="stylesheet" href="styles/content.css">
+    <link rel="stylesheet" href="styles/news.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/header.js"></script>
+    <script src = "scripts/coursesSetup.js"></script>
+    <link rel="stylesheet" href="styles/forms.css">
+    
+
+</head>
+<header class = "header__container">
+    <div class="header__inner">
+        <div class = "header__wrapper">
+            <h2>ASTRO</h2>
+            <nav class = "header__items-container">
+                <ul>
+                    <li><a class = "header__item" href="#all-courses">Все лекции</a></li>
+                    <li><a class = "header__item" href ="#review">Отзывы</a></li>
+                    <li><a class = "header__item" href="#about-us">О нас</a></li>
+                    <li><a class = "header__item" href="#price">Прайс-лист</a></li>
+                    <li><a class = "header__item" href="#news">Новости</a></li>
+                </ul>
+
+            </nav>
+            <a class="header__sign-button" href="#">Вход</a>
+
+        </div>
+        <div class="breadcams"></div>
+    </div>
+</header>
+<section class = "about-section" id = "about-us">
+<h1>ПОЧЕМУ ИМЕННО МЫ?</h1>
+<p class="slogan">лучшая образовательная платформа</p>
+<div class = "about-us-numbers-container">
+    <img src="assets/images/astronomija.jpg" alt = "image courses">
+    <div class="info-block-container">
+        <div class="info-block">
+            <h2 class="info-block__num">98%</h2>
+            окончивших курс отмечают,
+            что достигли своих целей
+        </div>
+        <div  class="info-block">
+            <h2 class="info-block__num">24/7</h2>
+            учёба в собственном графике
+            из любой точки мира
+        </div>
+        <div  class="info-block">
+            <h2 class="info-block__num">100+</h2>
+            компаний работают с нами регулярно
+        </div>
+        <div  class="info-block">
+            <h2 class="info-block__num">1200+</h2>
+            выпускников смогли трудоустроиться
+        </div>
+        <div  class="info-block">
+            <h2 class="info-block__num">126</h2>
+           возраст самого старшего студента
+        </div>
+        <div  class="info-block">
+            <h2 class="info-block__num">1000+</h2>
+            студентов отчислились с вузов из-за нас
+        </div>
+
+    </div>
+
+</div>
+</section>
+<section class="all-courses-section" id = "all-courses">
+    <div class="content">
+        <h2 class="all-courses-container__headText">НАШИ САМЫЕ ПОПУЛЯРНЫЕ КУРСЫ</h2>
+
+        <div class = "all-courses-container">
+
+            <div class = "all-courses-container__list" id="courses">
+                <!----Курсы тут спавню --->
+
+            </div>
+        </div>
+        <button>Покажите ещё!</button>
+    </div>
+
+
+</section>
+<section class = "review-section" id = "review">
+    <br>
+    <h2>ЧТО ПРО НАС ГОВОРЯТ СТУДЕНТЫ?</h2>
+    <p class="highlight-rev">Мы стремимся создать дружественное и поддерживающее обучающее сообщество, где каждый найдет что-то полезное для себя!</p>
+    <div class="review-content">
+        <button class="carousel-button prev" onclick="scrollCarousel(-100)">&#10094;</button>
+        <div class="reviews-container" id="reviews">
+            <script src = "scripts/reviewsSetup.js"></script>
+                <!-- тут добавляются студенты -->
+        </div>
+        <button class="carousel-button next" onclick="scrollCarousel(1)">&#10095;</button>
+    </div>
+    <h2>НАШ ПОТРЯСАЮЩИЙ ПРЕПОДОВАТЕЛЬСКИЙ СОСТАВ</h2>
+    <p class="highlight-rev">Настоящие профессионалы своего дела, которые не только обладают высоким уровнем знаний и опыта, но и способны вдохновить и поддержать каждого студента на пути к успеху.</p>
+    <div class = "teachers-container">
+        <div class="teacher-info-block">
+            <img class = "teacher-image" src="assets/images/galilej.webp" alt="teacher">
+            <h3 class = "teacher-name" >Галилео Галилей</h3>
+            <p class="teacher-description">Физик, астроном</p>
+        </div>
+        <div class="teacher-info-block">
+            <img class = "teacher-image" src="assets/images/kopernik.jpg" alt="teacher">
+            <h3 class = "teacher-name" >Какой-то мужик</h3>
+            <p class="teacher-description">Ассистент</p>
+        </div>
+        <div class="teacher-info-block">
+            <img class = "teacher-image" src="assets/images/struve.jpg" alt="teacher">
+            <h3 class = "teacher-name" >Василий Струве</h3>
+            <p class="teacher-description">Немецко-русский астроном</p>
+        </div>
+        <div class="teacher-info-block">
+            <img class = "teacher-image" src="assets/images/kepler.jfif" alt="teacher">
+            <h3 class = "teacher-name" >Иоган Кеплер</h3>
+            <p class="teacher-description">Немецкий математик и астроном
+            </p>
+        </div>
+    </div>
+</section>
+<h1>Прайс-лист</h1>
+<div class="card-container" id = "price">
+    <div class="card">
+      <h2>Фреш-курс</h2>
+      <p>Для начинающих</p>
+      <p class="price">4000 Р.</p>
+      <button>Купить</button>
+      <ul>
+        <li>2 лекции в день</li>
+        <li>Занятия с преподавателем</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Базовый курс</h2>
+      <p>Для среднего уровня</p>
+      <p class="price">8000 Р.</p>
+      <button>Купить</button>
+      <ul>
+        <li>Вся необходимая практика</li>
+        <li>Полный доступ к лециям</li>
+        <li>Проверка домашнего задания</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Углубленный курс</h2>
+      <p>Для прожжённыз астрономов</p>
+      <p class="price">12000 Р.</p>
+      <button>Купить</button>
+      <ul>
+        <li>Индивидуальный разбор тем с ведущими преподавателями организации</li>
+      </ul>
+    </div>
+    <div class="card">
+        <h2>ASTRO-Курс</h2>
+        <p>Для тех, кто хочет связать свою жизнь с астрономией</p>
+        <p class="price">15000 Р.</p>
+        <button>Купить</button>
+        <ul>
+          <li>Помощь в написании научных работ</li>
+          <li>Доступ ко всем лекциям</li>
+          <li>Индивидуальные занятия с ведущими преподавателями</li>
+        </ul>
+      </div>
+  </div>
+
+</div>
+<div class="news-section" id = "news">
+    <div class="main-news">
+      <div class="news-item">
+        <img src="assets/images/vojadger.jpg" alt="Основная новость">
+        <div class="news-date">Новости | 2025.06.03</div>
+        <div class="news-title">Вояджер вышел на связь</div>
+      </div>
+    </div>
+    <div class="side-news">
+      <div class="view-all">
+        <a href="#">посмотреть все ></a>
+      </div>
+      <div class="news-item">
+        <div class="news-date">Новости | 2025.06.03</div>
+        <div class="news-title">Новость</div>
+      </div>
+      <div class="news-item">
+        <div class="news-date">Новости | 2025.06.03</div>
+        <div class="news-title">Новость</div>
+      </div>
+      <div class="news-item">
+        <div class="news-date">Новости | 2025.06.03</div>
+        <div class="news-title">Новость</div>
+      </div>
+    </div>
+  </div>
+    <footer>
+
+
+    <div class="breadcams"></div>
+    <br>
+    <form class="content__container__form">
+        <h1 >Нужна помощь?</h1>
+        <p>Если вы хотите больше узнать или не знаете, какую программу обучения выбрать, оставьте заявку — и мы перезвоним</p>
+
+        <input type="text" placeholder="ИМЯ">
+        <input type="email" placeholder="EMAIL">
+        <input type="tel" placeholder="+375(xx)xxxxxxx">
+        <input type="submit" value="ОТПРАВИТЬ">
+    </form>
+    <div class="contact-information">
+        <a href="#">Пользовательское соглашение</a>
+        <a href="#">Сотрудничество с нами</a>
+        <a href="#">Наши офисы</a>
+    </div>
+
+</footer>

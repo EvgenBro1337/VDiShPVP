@@ -1,0 +1,9 @@
+.news-section { display: flex; justify-content: space-between; }
+  .main-news { width: 60%; }
+  .side-news { width: 35%; }
+  .news-item { margin-bottom: 20px; }
+  .news-item img { width: 100%; }
+  .news-title { font-size: 24px; font-weight: bold; }
+  .news-date { font-size: 14px; color: #ffffff; }
+  .view-all { text-align: right; margin-bottom: 20px; }
+  .view-all a { text-decoration: none; color: #ffffff; }
